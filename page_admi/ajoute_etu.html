@@ -1,0 +1,320 @@
+
+
+<html>
+    <head>  
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>projet</title>
+        <!-- CSS Files Fonts and Icons-->
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../bootstrap/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+        <link href="../bootstrap/css/themify-icons.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!--ie浏览器兼容-->
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+    </head>
+    <body>
+        <form action="ajoute_etu.php" method="post"/>
+        <div class="image-container set-full-height" style="background-image: url('../bootstrap/img/paper-2.jpg')"> 
+            <div class="col-sm-8 col-sm-offset-2">
+                <br><br><br>                   
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <!-- liste des etudiant-->
+                        <table>
+                            <tr>
+                                <th > 
+                                    Ajouter des étudiant&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+                                    <input type="submit"  class="btn btn-primary" value="sumit" float='right'>
+                                </th>
+                            </tr>
+                        </table>                       
+                    </div>
+
+                    <!-- Table -->
+                    <div class="bodycontainer scrollable">
+                        <table id="testTable" class="table table-hover table-scrollable">
+
+                            <thead>
+                                <tr>
+                                    <th>N°Etudiant</th>
+                                    <th>Nom</th>
+                                    <th>Prenom</th>
+                                    <th>Admission</th>
+                                    <th>filiere</th>
+                                    <th>Semestre</th>
+                                    <th>branch</th>
+                                    <th>mdp</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text" name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr><tr>
+                                    <td><input type="text"name='numero[]'size="8"></td>
+                                    <td><input type="text"name='nom[]'size="8"></td>
+                                    <td><input type="text"name='prenom[]'size="8"></td>
+                                    <td><select name='ademission[]'>
+                                            <option>BR</option>
+                                            <option>TC</option>
+                                    </td>
+                                    <td><select name='filiere[]'>
+                                            <option>?</option>
+                                    </td>
+                                    <td><select name='semestre[]'>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </td>
+                                    <td><select name='branch[]'>
+                                            <option>ISI</option>
+                                            <option>SRT</option>
+                                            <option>MTE</option>
+                                            <option>GM</option>
+                                            <option>SI</option>
+                                    </td>
+                                    <td><input type="text"name='mdp[]'size="8"></td>
+                                </tr>
+
+                                <!-- fin test -->
+
+
+                            </tbody>  
+                        </table>
+                    </div> 
+
+                </div> 
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+

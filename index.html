@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>projet</title>
+
+        <!-- CSS Files Fonts and Icons-->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="bootstrap/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+        <link href="bootstrap/css/themify-icons.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        <div class="image-container set-full-height" style="background-image: url('bootstrap/img/paper-2.jpg')">
+
+
+            <!--   Big container   -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <!--      Wizard container        -->
+                        <div class="wizard-container">
+                            <div class="card wizard-card" data-color="orange" id="wizard">
+                                <form action="action/index_action.php" method="post">
+                                    <!--        You can switch " data-color="green" "  with one of the next bright colors: "blue", "azure", "orange", "red"       -->
+
+                                    <div class="wizard-header">
+                                        <h3 class="wizard-title">Accueil</h3>
+                                        <p class="category">Bienvenue sur l'ent</p>
+                                    </div>
+                                    <div class="wizard-navigation">
+                                        <div class="progress-with-circle">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4" style="width: 15%;"></div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <a href="#location" data-toggle="tab">
+                                                    <div class="icon-circle">
+                                                        <i class="ti-map"></i>
+                                                    </div>
+                                                    Bienvenue
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#type" data-toggle="tab">
+                                                    <div class="icon-circle">
+                                                        <i class="ti-direction-alt"></i>
+                                                    </div>
+                                                    Type
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#facilities" data-toggle="tab">
+                                                    <div class="icon-circle">
+                                                        <i class="ti-panel"></i>
+                                                    </div>
+                                                    Log-in
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#description" data-toggle="tab">
+                                                    <div class="icon-circle">
+                                                        <i class="ti-comments"></i>
+                                                    </div>
+                                                    commentaires
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content">
+                                        <!--la premier div-->
+                                        <div class="tab-pane" id="location">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <h5 class="info-text"> </h5>
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <h5 class="info-text"> &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        C'est un site Web dynamique <br/>
+                                                        pour la gestion des cursus des étudiants du programme ISI de l’UT</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--choisir les genres-->
+                                        <div class="tab-pane" id="type">
+                                            <h5 class="info-text">Quel genre d'utilisateur êtes-vous</h5>
+                                            <div class="row">
+
+                                                <div class="col-sm-8 col-sm-offset-2">
+                                                    <div class="col-sm-4 col-sm-offset-2">
+                                                        <div class="choice" data-toggle="wizard-radio">
+                                                            <div class="card card-checkboxes card-hover-effect">
+                                                                <i class="ti-book"></i>
+                                                                <input type="radio" name="type" value="etu"/><p>Etudiant</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="choice" data-toggle="wizard-radio">
+                                                            <div class="card card-checkboxes card-hover-effect">
+                                                                <i class="ti-settings"></i>
+                                                                <input type="radio" name="type" value="adm"/><p>Administrateur</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="facilities">
+                                            <h5 class="info-text">IDENTIFICATION </h5>
+                                            <div class="row">
+                                                <div class="col-sm-5 col-sm-offset-4">
+                                                    <div class="form-group">
+                                                        <label>Votre compte</label>
+                                                        <input name="compte" type="text" class="form-control" placeholder="votre compte...">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-5 col-sm-offset-4">
+                                                    <div class="form-group">
+                                                        <label>Mot de passe</label>
+                                                        <input name="mdp" type="password" size='15' maxlength='15' class="form-control" placeholder="nom...">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-pane" id="description">
+                                            <div class="row">
+                                                <h5 class="info-text"> Informations d'étiteurs. </h5>
+                                                <div class="col-sm-6 col-sm-offset-1">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group">
+                                                            <label>les éléments</label>
+                                                            <p class="description">WAMP<br/>Apache<br/>HTML<br/>PHP
+                                                                <br/>framework(CSS,JS,JQuery): bootstrap </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4"> 
+                                                    <div class="form-group">
+                                                        <label>Auteur</label>
+                                                        <p class="description"><br/>ZHENG Ruolin<br/>ZHANG Zhaozhe</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wizard-footer">
+                                        <div class="pull-right">
+                                            <input type='button' class='btn btn-next btn-fill btn-success btn-wd'  name='next' value='Prochain' />
+                                            <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Démarrer' data-toggle="modal" data-target="#myModal"/>
+                                        </div>
+                                        <div class="pull-left">
+                                            <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Précédent' />
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- wizard container -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!--  big container -->
+
+            <div class="footer">
+                <div class="container text-center">
+                    Copyright &copy; 2017.LO07 projet.
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+
+    <!--   Core JS Files   -->
+    <script src="bootstrap/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="bootstrap/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+    <!--  Plugin for the Wizard -->
+    <script src="bootstrap/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+    <script src="bootstrap/js/jquery.validate.min.js" type="text/javascript"></script>
+
+</html>
